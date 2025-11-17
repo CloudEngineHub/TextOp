@@ -63,6 +63,7 @@ DATAFLAGS="data.weighted_sample=true data.datadir=./dataset/${DATADIR} data.acti
 We have provided some pretrained checkpoints:
  * `TextOpRobotMDAR/logs/pretrained/checkpoint/ckpt_200000.pth` is the ckpt of dar.
  * `TextOpRobotMDAR/logs/pretrained/checkpoint/vae.pth` is the ckpt of mvae.
+ * Note that this set of checkpoints should be run with  `DATADIR=PRIVATE-DATA`, corresponding to the statistics of its training data. It cannot run `vis_mvae` and `vis_dar` since the raw data is not provided.
 
 #### 1. Run Online Motion Generation with DAR:
 ```bash
